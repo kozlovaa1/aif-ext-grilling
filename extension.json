@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/lee-to/ai-factory/2.x/schemas/extension.schema.json",
+  "name": "aif-ext-grilling",
+  "version": "1.1.0",
+  "description": "Включает проверку решений по методу grilling в aif-explore только с параметром --grilling.",
+  "injections": [
+    {
+      "target": "aif-explore",
+      "position": "prepend",
+      "file": "./injections/explore-grilling.md"
+    }
+  ]
+}
